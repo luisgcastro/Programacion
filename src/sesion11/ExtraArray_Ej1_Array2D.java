@@ -1,6 +1,13 @@
 package sesion11;
 
-import java.util.Arrays;
+import java.util.Arrays; 
+
+/**
+ * 
+ * @author luisgarciacastro
+ *Boletin Extra Arrays Ej1
+ */
+
 
 public class ExtraArray_Ej1_Array2D {
 	
