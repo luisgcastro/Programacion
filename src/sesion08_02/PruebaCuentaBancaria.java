@@ -27,34 +27,25 @@ public class PruebaCuentaBancaria {
 		System.out.println("Fin prueba unitaria");
 	}
 
-	@Test
-	public void testIngresoEnCuenta1Vez() {
-		System.out.println("prueba testIngresoEnCuenta1Vez");
-		cuenta.realizarIngreso(1000);
-		int expected_value = 1000;
-		assertEquals(expected_value, cuenta.getCuantia());
-	}
-	
-	@Test
-	public void testIngresoEnCuenta100Vez() {
-		System.out.println("prueba testIngresoEnCuenta100Vez");
-		for (int i = 0; i < 100; i++) {
-			cuenta.realizarIngreso(1000);
-		}
-		int expected_value = 1000*100;
-		assertEquals(expected_value, cuenta.getCuantia());
-	}
-	
-	@Test
-	public void testTransferencia() {
-		System.out.println("prueba testTransferencia");
-		cuenta.realizarIngreso(1000);
-		cuenta2.realizarIngreso(1000);
-		
-		cuenta.realizarTransferencia(500, cuenta2);
-		
-		assertEquals(500, cuenta.getCuantia());
-		assertEquals(1500, cuenta2.getCuantia());
-	}
-
+	/*
+	 * @Test public void testIngresoEnCuenta1Vez() {
+	 * System.out.println("prueba testIngresoEnCuenta1Vez");
+	 * cuenta.realizarIngreso(1000); int expected_value = 1000;
+	 * assertEquals(expected_value, cuenta.getCuantia()); }
+	 * 
+	 * @Test public void testIngresoEnCuenta100Vez() {
+	 * System.out.println("prueba testIngresoEnCuenta100Vez"); for (int i = 0; i <
+	 * 100; i++) { cuenta.realizarIngreso(1000); } int expected_value = 1000*100;
+	 * assertEquals(expected_value, cuenta.getCuantia()); }
+	 * 
+	 * @Test public void testTransferencia() {
+	 * System.out.println("prueba testTransferencia"); cuenta.realizarIngreso(1000);
+	 * cuenta2.realizarIngreso(1000);
+	 * 
+	 * cuenta.realizarTransferencia(500, cuenta2);
+	 * 
+	 * assertEquals(500, cuenta.getCuantia()); assertEquals(1500,
+	 * cuenta2.getCuantia()); }
+	 * 
+	 */
 }
