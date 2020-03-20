@@ -44,6 +44,7 @@ public class Ej5Persona {
 	public int calcularIMC() {
 		
 		double peso_ideal = this.peso / Math.pow(this.altura, 2);
+		System.out.println(peso_ideal);
 		
 		if (peso_ideal<20) {
 			return PESOBAJO;
