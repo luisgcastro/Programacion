@@ -153,5 +153,14 @@ public class MetodoDeAcceso {
 		return true;
 	}
 	
+	public boolean desconectar() {
+		if (this.estadoAcceso == CONECTADO) {
+			this.estadoAcceso = DESCONECTADO;
+			this.numIntentos = 5;
+			return true;
+		}
+		return false;
+	}
+	
 
 }
