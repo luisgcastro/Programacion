@@ -6,7 +6,7 @@ public class EnAlquiler extends Vivienda {
 	private int mesesFianza;
 	
 	public EnAlquiler(int altura, int habitaciones, int codPostal, int mesesFianza, double precioAlquiler) {
-		super(altura, habitaciones, codPostal);
+		super(altura, habitaciones, codPostal, mesesFianza);
 		this.precioAlquiler = precioAlquiler;
 		this.mesesFianza = mesesFianza;
 	}

@@ -7,7 +7,7 @@ public class EnVenta extends Vivienda{
 	private double comision;
 	
 	public EnVenta(int altura, int habitaciones, int codPostal, double precio, double señal, double comision) {
-		super(altura, habitaciones, codPostal);
+		super(altura, habitaciones, codPostal, codPostal);
 		this.precio = precio;
 		this.señal = señal;
 		this.comision = comision;
