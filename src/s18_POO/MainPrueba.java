@@ -1,4 +1,4 @@
-package relaciones;
+package s18_POO;
 
 public class MainPrueba {
 	
