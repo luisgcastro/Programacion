@@ -1,6 +1,7 @@
 package lecciones.T8_COLECCIONES_DE_DATOS.ArrayList;
 
-import java.util.Arraylist;
+import java.util.ArrayList;
+
 
 public class ArrayListMain {
 
